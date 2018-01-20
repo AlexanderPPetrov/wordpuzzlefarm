@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="helloWorldApp">
+<head>
+    <title>Angular View</title>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="scripts/helloWorldApp.js"></script>
+</head>
+<body ng-controller="indexController">
+<h1>Hack Hands Angular Demos</h1>
+<div ng-view>
+    <div id="messageTitle"></div>
+    <div id="message">{{message}}</div>
+</div>
+</body>
+</html>
