@@ -3,13 +3,27 @@ const {StyleSheet} = React;
 
 export default {
 
-    imageContainer: {
+    infoContainer: {
         padding:10,
-        backgroundColor:'yellow'
+        borderColor: '#F5F5F5',
+        borderWidth:1,
+        height:'100%'
     },
-    avatar: {
-        width: '100%',
-        selfAlign:'flex-start'
+    profileList: {
+        borderBottomColor: '#F5F5F5',
+        borderBottomWidth: 1,
+        paddingTop:10,
+        paddingBottom:10
+    },
+    listLabel: {
+        color:'#666'
+    },
+    name: {
+        fontSize: 20,
+        color:'#000'
+    },
+    listValue: {
+        alignSelf: 'stretch',
+        textAlign: 'right'
     }
-
 };
