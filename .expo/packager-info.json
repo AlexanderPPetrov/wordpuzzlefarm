@@ -1,8 +1,8 @@
 {
   "expoServerPort": 19000,
-  "expoServerNgrokUrl": "https://je-at9.alexppetrov.premiumtradings.exp.direct",
-  "packagerNgrokUrl": "https://packager.je-at9.alexppetrov.premiumtradings.exp.direct",
-  "ngrokPid": 91785,
+  "expoServerNgrokUrl": "https://ms-nkd.alexppetrov.reactnativemaster.exp.direct",
+  "packagerNgrokUrl": "https://packager.ms-nkd.alexppetrov.reactnativemaster.exp.direct",
+  "ngrokPid": 1526,
   "packagerPort": 19001,
-  "packagerPid": 91769
+  "packagerPid": 1513
 }

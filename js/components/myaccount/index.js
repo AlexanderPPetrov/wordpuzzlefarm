@@ -17,6 +17,9 @@ import {
     Body,
     CardItem
 } from "native-base";
+
+import Tabs from './tabs';
+
 import {Grid, Row, Col} from "react-native-easy-grid";
 
 import {View} from "react-native"
@@ -42,12 +45,7 @@ class MyAccount extends Component {
                     <Right/>
 
                 </Header>
-                <Content padder>
-                    <Card>
-                        <Text>{I18n.t('myAccount')}</Text>
-                    </Card>
-
-                </Content>
+                <Tabs/>
 
             </Container>
         );
