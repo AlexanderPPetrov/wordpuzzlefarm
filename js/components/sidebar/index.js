@@ -34,6 +34,11 @@ const datas = [
         name: I18n.t('users'),
         route: "Users",
         icon: "ios-people"
+    },
+    {
+        name: I18n.t('forecast'),
+        route: "Forecast",
+        icon: "ios-analytics-outline"
     }
 ];
 

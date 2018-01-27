@@ -4,5 +4,6 @@ export default {
     login: 'Log in',
     myAccount: 'My Account',
     users: 'Users',
+    forecast: 'Forecast'
 
 };

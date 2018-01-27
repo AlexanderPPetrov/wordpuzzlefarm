@@ -2,7 +2,7 @@
   "expoServerPort": 19000,
   "expoServerNgrokUrl": "https://ms-nkd.alexppetrov.reactnativemaster.exp.direct",
   "packagerNgrokUrl": "https://packager.ms-nkd.alexppetrov.reactnativemaster.exp.direct",
-  "ngrokPid": 2678,
-  "packagerPort": 19001,
-  "packagerPid": 2660
+  "ngrokPid": 33796,
+  "packagerPort": 19002,
+  "packagerPid": 33774
 }

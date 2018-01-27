@@ -33,10 +33,18 @@ let Api = {
                     options.success(responseJson)
                 }
                 console.log(responseJson)
+                if(options.always){
+                    options.always()
+                }
             })
             .catch((error) => {
                 console.error(error);
-
+                if(options.always){
+                    options.always()
+                }
+                if(options.error){
+                    options.error()
+                }
                 Toast.show({
                     text: error,
                     buttonText: I18n.t('ok')
