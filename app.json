@@ -17,5 +17,9 @@
       "barStyle": "light-content",
       "backgroundColor": "#1b2d4e"
     }
+  },
+  "splash": {
+    "image": "./img/loading_logo.png",
+    "backgroundColor": "#162136"
   }
 }

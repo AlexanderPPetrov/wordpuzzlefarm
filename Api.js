@@ -32,7 +32,6 @@ let Api = {
                 if(options.success){
                     options.success(responseJson)
                 }
-                console.log(responseJson)
                 if(options.always){
                     options.always()
                 }

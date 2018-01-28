@@ -22,10 +22,29 @@ import Tabs from './tabs';
 
 import {Grid, Row, Col} from "react-native-easy-grid";
 
-import {View} from "react-native"
+import {View, BackHandler, Alert} from "react-native"
 
 
 class MyAccount extends Component {
+
+    componentDidMount = () => {
+        BackHandler.addEventListener('hardwareBackPress', () => {
+            this.handleBackButton();
+            return true;
+        });
+    }
+
+    handleBackButton = () => {
+        Alert.alert(
+            'Exit',
+            'Are you sure you want to exit?',
+            [
+                {text: 'Cancel', onPress: () => console.log('Cancel Pressed'), style: 'cancel'},
+                {text: 'OK', onPress: () => BackHandler.exitApp()},
+            ],
+            { cancelable: false }
+        )
+    }
 
     render() {
         return (

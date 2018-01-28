@@ -5,5 +5,5 @@
   "strict": false,
   "minify": false,
   "urlType": "exp",
-  "urlRandomness": "ms-nkd"
+  "urlRandomness": "6x-s6m"
 }

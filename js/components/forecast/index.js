@@ -79,7 +79,6 @@ class Forecast extends Component {
             weatherData:chartData
         });
 
-        console.log(chartData)
     };
 
     prepareWeatherDataDay = (data) => {
@@ -102,17 +101,16 @@ class Forecast extends Component {
             }
             humidityData.push(humidity)
 
-            console.log(temp, humidity)
         }
 
-        const day = new Date(data[0].dt_txt).getDay();
+        const day = data[0].dt_txt.split(' ')[0];
 
         let chartData = {
             temp: tempData,
             maxTemp: this.defineMax(tempData),
             humidity: humidityData,
             maxHumidity: this.defineMax(humidityData),
-            day:weekDays[day]
+            day:day
         }
 
         return chartData;
@@ -127,10 +125,9 @@ class Forecast extends Component {
 
 
     getCharts = () => {
-        console.log(this.state.weatherData)
         if(this.state.weatherData.length > 0){
             const chartsList = this.state.weatherData.map((current, i)=> {
-                return <Chart key={i} day={current.day}></Chart>
+                return <Chart key={i} day={current.day} temp={current.temp} maxTemp={current.maxTemp}></Chart>
             })
             return chartsList
         }
