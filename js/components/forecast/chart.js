@@ -25,6 +25,7 @@ import {Grid, Row, Col} from "react-native-easy-grid";
 import styles from "./styles";
 import Api from '../../../Api';
 import {VictoryChart, VictoryAxis, VictoryArea, VictoryScatter} from 'victory-native'
+import {Defs, LinearGradient, Polygon, Stop, Svg} from "react-native-svg";
 
 const colors = ["#ff7200",  "#8bb3db"];
 
@@ -113,6 +114,16 @@ class Chart extends React.Component {
                 </CardItem>
                 <CardItem pointerEvents="none" style={{paddingLeft:0}}>
                     <VictoryChart style={{paddingLeft:0}} domain={{y: [-5, 5]}} height={250}>
+
+                        <Defs>
+                            <LinearGradient id="gradient1"
+                                            x1="0%" y1="0%" x2="0%" y2="100%"
+                            >
+                                <Stop offset="0%" stopColor="red"/>
+                                <Stop offset="100%" stopColor="blue"/>
+                            </LinearGradient>
+                        </Defs>
+
                         <VictoryAxis key={0} tickFormat={(x) => this.getHoursLabel(x)} offsetY={50}/>
                         <VictoryAxis dependentAxis
                                      key={1}
@@ -130,14 +141,12 @@ class Chart extends React.Component {
                             style={{
                                 data: {
                                     stroke: colors[0],
-                                    fill: colors[0],
+                                    fill: "url(#gradient1)",
                                     fillOpacity: 0.5
                                 }
                             }}
                             y={(data) => data.y / this.props.maxTemp}
                             y0={() => -5}
-
-
                         />
 
                         <VictoryScatter data={this.props.temp}
