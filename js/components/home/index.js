@@ -15,7 +15,7 @@ class Home extends Component {
 
 		return (
 			<Container style={styles.loginContainer}>
-				<StatusBar barStyle="light-content" />
+				<StatusBar hidden={true} />
 				<View style={styles.imageContainer}>
 					<Image source={logo} resizeMode="contain" style={styles.logo}></Image>
 				</View>

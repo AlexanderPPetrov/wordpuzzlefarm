@@ -25,5 +25,19 @@ export default {
     listValue: {
         alignSelf: 'stretch',
         textAlign: 'right'
+    },
+    wordContainer: {
+        position:'absolute'
+    },
+    letterContainer: {
+        paddingLeft:0,
+        paddingTop:0,
+        paddingRight:0,
+        paddingBottom:0,
+        backgroundColor:'rgba(255,255,255,0.7)',
+        borderRadius:2,
+        borderWidth:1,
+        borderColor:'rgba(0,0,0,0.6)'
     }
+
 };

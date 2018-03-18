@@ -32,6 +32,12 @@ local.properties
 # node.js
 #
 node_modules/
+
+
+img/
+js/components/game/lettersContainer.js
+js/components/game/WordsMenu.js
+
 npm-debug.log
 
 # BUCK

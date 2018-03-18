@@ -48,7 +48,7 @@ class Login extends React.Component {
 
     loginSuccess = (response) => {
         console.log(response)
-        this.props.navigation.navigate("MyAccount")
+        this.props.navigation.navigate("Game")
     };
 
     render() {
@@ -65,7 +65,7 @@ class Login extends React.Component {
                 <Button block style={styles.loginButton} onPress={() =>
 
                     /*this.login()*/
-                     this.props.navigation.navigate("MyAccount")
+                     this.props.navigation.navigate("Game")
 
                 }>
                     <Text>{I18n.t('login').toUpperCase()}</Text>

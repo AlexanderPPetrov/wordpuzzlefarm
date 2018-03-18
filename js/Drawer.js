@@ -1,7 +1,7 @@
 import React from "react";
 import {DrawerNavigator} from "react-navigation";
 
-import MyAccount from "./components/myaccount/";
+import MyAccount from "./components/game/";
 import Users from "./components/users/";
 import Forecast from "./components/forecast/";
 

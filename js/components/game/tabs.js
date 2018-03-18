@@ -9,7 +9,7 @@ import {
 
 import { View, Image} from "react-native";
 
-import Profile from './profile';
+import WordsMenu from './WordsMenu';
 import Statistics from './statistics';
 
 import {Grid, Row, Col} from "react-native-easy-grid";
@@ -19,8 +19,8 @@ const avatar = require("../../../img/avatar.png");
 
 
 const Tabs = TabNavigator({
-    Profile: {
-        screen: Profile,
+    WordsMenu: {
+        screen: Statistics,
     },
     Settings: {
         screen: Statistics,
@@ -28,11 +28,16 @@ const Tabs = TabNavigator({
 }, {
     tabBarPosition: 'top',
     tabBarOptions: {
-        activeTintColor: '#fff',
+        activeTintColor: '#fff'
     },
+    animationEnabled: false,
+    swipeEnabled: false,
     indicatorStyle: {
         activeTintColor:'#fff'
     }
+
+}, {
+    swipeEnable: false // work
 });
 
 export default Tabs;
